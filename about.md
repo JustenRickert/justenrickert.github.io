@@ -5,9 +5,10 @@ permalink: /about/
 tags: about
 ---
 
-Hello! I am a Mathematician and aspiring Web Developer aspiring to make an
+Hello! I call myself Mathematician and Web Developer and aspire to make an
 important impact on the World Wide Web. If you're interested in what I've
-already done, check out this list of things that I've done.
+already done, check out these lists of things. Also please make sure to check
+back in sometime!
 
 ### School Papers
 
