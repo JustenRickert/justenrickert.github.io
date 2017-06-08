@@ -1,4 +1,4 @@
-<div class="share-page">
+<div class="share-page right">
   {{ site.text.share_buttons.text }}
 
   <div class="share-links">
@@ -38,4 +38,4 @@
       <a class="fa fa-hacker-news" onclick="parent.postMessage('submit','*')" href="https://news.ycombinator.com/submitlink?u={{ site.url | cgi_escape }}{{ page.url | cgi_escape }}&amp;t={{ page.title | cgi_escape }}" rel="nofollow" target="_blank" title="{{ site.text.share_buttons.hackernews }}"></a>
     {% endif %}
   </div>
-</div>
+</div><br>
