@@ -1,20 +1,28 @@
 ---
 layout: page
-title: About Pixyll
+title: About Me
 permalink: /about/
 tags: about
 ---
 
-This Jekyll theme was crafted with <3 by [John Otander](http://johnotander.com)
-([@4lpine](https://twitter.com/4lpine)).
+Hello! I am a Mathematician and aspiring Web Developer aspiring to make an
+important impact on the World Wide Web. If you're interested in what I've
+already done, check out this list of things that I've done.
 
-Checkout the [Github repository](https://github.com/johnotander/pixyll) to download it,
-request a feature, report a bug, or contribute. It's free, and open source
+### School Papers
+
+* [Strategic Outcomes](/files/strategicoutcomes.pdf), [repository](//github.com/JustenRickert/papergame)
+* [The Human Automaton](/files/thehumanautomaton.pdf)
+
+### School Notes
+
+* [Automata Notes](//github.com/JustenRickert/automata-notes/blob/master/notes/notes.pdf)
+* [Math Fundamentals Notes](//github.com/JustenRickert/math-fundamentals-notes/blob/master/study/study.pdf)
+* [Biology Notes](//github.com/JustenRickert/biology-notes/blob/master/main.pdf)
+
+### The Blog Technology
+
+Checkout the [Github repository](https://github.com/justenrickert/pixyll) to get
+some insight about how I made this blog. It's free, and open source
 ([MIT](http://opensource.org/licenses/MIT)).
 
-Thanks to the following:
-
-* [BASSCSS](http://basscss.com)
-* [Jekyll](http://jekyllrb.com)
-* [Refills](http://refills.bourbon.io/)
-* [Type Scale](http://type-scale.com/)
