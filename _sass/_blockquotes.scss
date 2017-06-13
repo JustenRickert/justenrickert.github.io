@@ -12,12 +12,12 @@ blockquote footer {
   clear: both;
   font-size: .85rem;
   font-style: normal;
-  text-align: left;
+  text-align: right;
   padding: 0;
 }
 
 .ipa {
-    letter-spacing: 1px;
+    color: $mid-gray;
     font-size: 1.25rem;
     font-family: 'Voces', sans-serif;
 }
