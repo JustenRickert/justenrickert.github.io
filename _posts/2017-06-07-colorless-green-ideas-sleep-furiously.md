@@ -42,17 +42,19 @@ Let's start with the verb phrase. What does it mean to sleep furiously? To do
 anything furiously means one of two things according to the definition of
 furiously.
 
-> __fu·ri·ous·ly__ / ˈfyo͞orēəslē/ adverb <br> In an extremely angry manner. <br>
-> In an extremely energetic or hurried manner; intensely.
+{% include definition.html
+word="fu·ri·ous·ly"
+ipa="ˈfyo͞orēəslē"
+part="adverb"
+content="In an extremely angry manner." 
+content2="In an extremely energetic or hurried manner; intensely."%}
 
 Either the thing is done in an extremely angry manner, or the thing is done
 extremely hurriedly or intensely such that it will have appeared to be done with
 an unnaturally large amount of energy. By either definition, meaning can be
 given to the verb phrase _to sleep furiously_.
 
-<div class="right">
-<img src="{{ site.baseurl }}/images/colorless-green-ideas/door.png">
-</div><br>
+<img class="float right" src="{{ site.baseurl }}/images/colorless-green-ideas/door.png">
 
 In consideration of the first definition, let there exist a child furious over
 the rules set by his parents about going to bed at a certain hour. In this case,
@@ -68,9 +70,7 @@ them how passionate he had become over the project. Now he must angrily retreat
 to his room, where for many moments he will lie awake before drifting to sleep
 furiously.
 
-<div class="largeleft">
-<img src="{{ site.baseurl }}/images/colorless-green-ideas/child.png">
-</div>
+<img class="float left" style="max-width: 50%;" src="{{ site.baseurl }}/images/colorless-green-ideas/child.png">
 
 In consideration of the second definition of the word furiously, let the same
 furious child exist as before under the same conditions, this time with the
@@ -92,9 +92,12 @@ The noun phrase in the question is a little harder to put an exact epistemic
 rationalization to. In philosophy there are several definitions given to the
 word _idea_:
 
-> __i·de·a__ / ī ˈdēə/ _noun_ (philosophy) <br> an eternally existing pattern of
-> which individual things in any class are imperfect copies. <br><br> a concept of
-> pure reason, not empirically based in experience.
+{% include definition.html
+word="i·de·a"
+ipa="īˈdēə"
+part="noun (philosophy)"
+content="an eternally existing pattern of which individual things in any class are imperfect copies."
+content2="a concept of pure reason, not empirically based in experience." %}
 
 Since we are looking to make sense of the phrase in consideration of naturally
 occurring phenomena, it is fair to throw out the second definition being that it
@@ -103,7 +106,11 @@ definition becomes more desirable. It is an _existing pattern_. Considering the
 definition of idea from a less philosophical point of view, we attain something
 less close to something patterned but more abstract. It is:
 
-> __i·de·a__ / ī ˈdēə/ _noun_ <br> a concept or mental impression.
+{% include definition.html
+word="i·de·a"
+ipa="īˈdēə"
+part="noun"
+content="a concept or mental impression." %}
 
 It is something expressible by words though not entirely, and exists prior to
 the words existing; something causally formulated by human consciousness and

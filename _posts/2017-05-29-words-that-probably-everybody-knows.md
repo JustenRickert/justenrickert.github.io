@@ -26,8 +26,12 @@ look though, so I told her that it means about the same thing as the word
 _commonplace_ (which in some circumstances is pretty close). Google's definition
 of the word is this:
 
-> __u·biq·ui·ty__ /yo͞oˈbikwədē/ noun <br> The fact of
-> appearing everywhere or of being very common.
+{% include definition.html
+word="u·biq·ui·ty"
+ipa="yo͞oˈbikwədē"
+part="noun"
+content="The fact of appearing everywhere or of being very common."
+%}
 
 She then asked me why I didn't just use the word "commonplace" instead. I made
 the remark that this replacement word for ubiquity is in fact actually two
@@ -72,15 +76,30 @@ not exactly how I believe one likes them to be.
 
 The first two are __true and false__.
 
-> __true__ /tro͞o/ adjective <br> In accordance with fact or reality.
+{% include definition.html
+word="true"
+ipa="tro͞o"
+part="adjective"
+content="In accordance with fact or reality." %}
 
-> __false__ /fôls/ _adjective_ <br> Not according with truth or fact; incorrect.
+{% include definition.html
+word="false"
+ipa="fôls"
+part="adjective"
+content="Not according with truth or fact; incorrect." %}
 
 The second two are __truth and falsehood__.
 
-> __truth__ /tro͞oTH/ _noun_ The quality or state of being true.
+{% include definition.html word="truth"
+ipa="tro͞oTH"
+part="noun"
+content="The quality or state of being true." %}
 
-> __false·hood__ / ˈfôlsˌho͝od/ _noun_ <br> The state of being untrue.
+{% include definition.html
+word="false·hood"
+ipa="ˈfôlsˌho͝od"
+part="noun"
+content="The state of being untrue." %}
 
 (True and false just seem so _together_, both have one syllable and contrast
 each other in starting letter; whereas it's almost bizarre that the contrary to
@@ -116,20 +135,18 @@ A different time, happening further back, I constructed a topic about an idiom
 to discuss with my friends. As per the last two terms, I shall give a
 definition:
 
-> __id·i·om__ / ˈidēəm/ noun <br> A group of words established by usage as
-> having a meaning not deducible from those of the individual words.
+{% include definition.html
+word="id·i·om"
+ipa="ˈidēəm"
+part="noun"
+content="A group of words established by usage as having a meaning not deducible from those of the individual words."
+%}
 
 The particular idiom I had in mind was
 
 > rose-colored glasses
 
-which is interesting to me. Usually when somebody has on their _rose-colored
-glasses_, it is that they're optimistic. I think in most cases it happens that
-they're acting optimistic _in spite of something_. Here I want to note the
-contrary to optimistic, which is pessimistic. This is to say that one who is not
-optimistic is pessimistic and one who is not pessimistic must be optimistic.
-There is a dualism by which these words have meaning, and it is perhaps easier
-to understand one by knowing the other.
+which is interesting to me. Usually when somebody has on their _rose-colored glasses_, it is that they're optimistic. I think in most cases it happens that they're acting optimistic _in spite of something_. Here I want to note the contrary to optimistic, which is pessimistic. This is to say that one who is not optimistic is pessimistic and one who is not pessimistic must be optimistic. There is a dualism by which these words have meaning, and it is perhaps easier to understand one by knowing the other.
 
 To say the same of the idiom _rose-colored glasses_ doesn't exactly make sense.
 What is the opposite of someone who wears glasses other than somebody who simply
@@ -144,9 +161,11 @@ to, representative of, or indicative of nothing but itself.
 Though there is a second relevant definition in reference to programming I also
 think is important. It is this:
 
-> __id·i·om__ / ˈidēəm/ _noun_ (programming) <br> A programming construct or
-> phraseology generally held to be the most efficient or elegant means to
-> achieve a particular result or behavior.
+{% include definition.html
+word="id·i·om"
+ipa="ˈidēəm"
+part="noun (programming)"
+content="A programming construct or phraseology generally held to be the most efficient or elegant means to achieve a particular result or behavior." %}
 
 Regarding the previous discussion, it makes sense to say that _rose-colored
 glasses_ represents an efficient or elegant solution to detailing the

@@ -8,8 +8,21 @@ layout: default
     <div class="posts">
       {% for post in paginator.posts %}
         <div class="post py3">
+
           <p class="post-meta">{{ post.date | date: site.date_format }}<br><i class="fa fa-tag" aria-hidden="true"></i> {{ post.tags | array_to_sentence_string }}</span></p>
-          <a href="{{ post.url | prepend: site.baseurl }}" class="post-link"><h3 class="h1 post-title">{{ post.title }}</h3></a>
+
+          <span class="post-meta small">
+              {% assign length = post.content | strip_html | number_of_words%}
+              {% assign minutes = length | divided_by: 180 %}
+              {% if minutes == 0 %}
+              {% assign minutes = 1 %}
+              {% endif %}
+
+              {{ length }} words, ~{{ minutes }} {{ site.text.post.minute_read }}
+              </span>
+
+              <a href="{{ post.url | prepend: site.baseurl }}" class="post-link"><h3 class="h1 post-title">{{ post.title }}</h3></a>
+
           <span class="post-summary">
             {% if post.summary %}
               {{ post.summary }}
@@ -17,6 +30,7 @@ layout: default
               {{ post.excerpt }}
             {% endif %}
           </span>
+
         </div>
       {% endfor %}
     </div>

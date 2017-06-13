@@ -1,0 +1,9 @@
+<blockquote style="float: right; max-width: 66%;">
+    <span style="font-style: normal"><strong>{{ include.word }}</strong></span>
+    <span class="ipa">/{{ include.ipa }}/</span>
+    {{ include.part }} <br>
+    {{ include.content }}
+    {% if include.content2 %}
+    <br><br>{{ include.content2 }}
+    {% endif %}
+</blockquote>
