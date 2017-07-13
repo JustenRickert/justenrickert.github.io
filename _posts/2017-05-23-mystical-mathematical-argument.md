@@ -10,7 +10,7 @@ published: true
 
 <div class="left">
 <img src="{{ site.baseurl }}/images/bertrand-by-carlitopo.png">
-<a href="http://carlitopo.deviantart.com/art/Bertrand-Russell-376899932">Bertrand Russell</a>
+<a class="h6" href="http://carlitopo.deviantart.com/art/Bertrand-Russell-376899932">Bertrand Russell</a>
 </div>
 
 I want to start by
@@ -30,8 +30,11 @@ attempts to bring together the two theories of Mysticism and Logic. I believe
 this to be a general human faculty, combination or unionization, some kind of
 method bringing together previous ideas in important, new, useful ways.
 
-> __un·ion__ / ˈyo͞onyən/ _noun_ <br> the set that comprises all the elements
-> (and no others) contained in any of two or more given sets.
+{% include definition.html
+word="un·ion"
+ipa="ˈyo͞onyən"
+part="noun"
+content="the set that comprises all the elements (and no others) contained in any of two or more given sets." %}
 
 In examining this sort
 of

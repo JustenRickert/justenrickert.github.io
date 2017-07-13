@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<head>
+	  <title>Personal Bank Account Application</title>
+	  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	  <link rel="stylesheet" type="text/css" href="../public/gridforms/gridforms.css">
+	  <script type="text/javascript" src="../public/gridforms/gridforms.js"></script>
+	  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+</head>
+
+<body>
+    <div>
+        <h2 style="float: left">HSA Application</h2>
+        <h3 style="float: right">Deerwood Bank <br /> PO Box 2905 Baxter, MN 56425 <br /> 218-825-8946<br /><a href="http://www.deerwoodbank.com">www.deerwoodbank.com</a>
+        </h3>
+    </div>
+
+    <div style="clear: both;">
+        <form class="grid-form" method="POST" action="/action.php">
+            <fieldset><legend>Personal Information</legend>
+                <div data-row-span="4">
+                    <div data-field-span="2"><label>Name:</label><input type="text"></div>
+                    <div data-field-span="1"><label>Social Security #:</label><input type="text"></div>
+                    <div data-field-span="1"><label>Date of Birth:</label><input type="text"></div>
+                </div>
+
+                <div data-row-span="10">
+                    <div data-field-span="4"><label>Street Adress:</label><input type="text"></div>
+                    <div data-field-span="3"><label>City:</label><input type="text"></div>
+                    <div data-field-span="1"><label>State:</label><input type="text"></div>
+                    <div data-field-span="2"><label>Zip:</label><input type="text"></div>
+                </div>
+
+                <div data-row-span="10">
+                    <div data-field-span="4"><label>Mailing Address (if different from above):</label>
+                        <input type="text"></div>
+                        <div data-field-span="3"><label>City:</label><input type="text"></div>
+                        <div data-field-span="1"><label>State:</label><input type="text"></div>
+                        <div data-field-span="2"><label>Zip:</label><input type="text"></div>
+                </div>
+
+                <div data-row-span="6">
+                    <div data-field-span="3"><label>Driver's License #:</label><input type="text"></div>
+                    <div data-field-span="1"><label>State Issued:</label><input type="text"></div>
+                    <div data-field-span="1"><label>Issue Date:</label><input type="text"></div>
+                    <div data-field-span="1"><label>Expiration Date:</label><input type="text"></div>
+                </div>
+
+                <div data-row-span="5">
+                    <div data-field-span="2"><label>Security Word:</label><input type="text"></div>
+                    <div data-field-span="2"><label>Security Reminder Question:</label><input type="text"></div>
+                    <div data-field-span="1"><label>Debit Card:</label>
+                        <input id="debit-yes" name="debit" type="radio"><label>yes</label>
+                        <input id="debit-no" name="debit" type="radio"><label>no</label>
+                    </div>
+                </div>
+
+                <div data-row-span="1">
+                    <div data-field-span="1"><label>Email:</label><input type="text"></div>
+                </div>
+            </fieldset><br />
+
+            <fieldset><legend>Initial Contribution Information</legend>
+                <span>Skip this section if you HSA contributions are coming directly from your employer.</span><br><br>
+
+                <label style="font-weight: bold">Type</label>
+                <div data-row-span="3">
+                    <div data-field-span="1"><label></label> <input id="regular" name="initial-contribution-type" type="radio"><label>Regular</label></div>
+                    <div data-field-span="1"><label></label> <input id="rollover" name="initial-contribution-type" type="radio"><label>Rollover</label></div>
+                    <div data-field-span="1"><label></label> <input id="transfer" name="initial-contribution-type" type="radio"><label>Transfer</label></div>
+                </div><br>
+
+                <label style="font-weight: bold">Tax Year</label>
+                <div data-row-span="2">
+                    <div data-field-span="1"><input id="tax-current-year" name="initial-contribution-tax-year" type="radio"><label>Current Year</label></div>
+                    <div data-field-span="1"><input id="tax-prior-year" name="initial-contribution-tax-year" type="radio"><label>Prior Year</label></div>
+                </div>
+            </fieldset><br>
+
+            <fieldset><legend>Signatures</legend>
+                <blockquote style="font-size: 0.8em;">I have received, either in print or electronically, read and agree to the terms in the Custodial Agreement and Disclosure Statement and I agree that those terms and conditions apply to this HSA and that I am bound by those terms and conditions. If applicable, I hereby designate the beneficiaries for this HSA as those named on the second page of this Application in the HSA Designation of Beneficiary section. If applicable, I hereby authorize the person named on the second page of this Application in the HSA Authorized Signer section as an authorized signer for this HSA. I understand that I am solely responsible to determine my eligibility to make this HSA contribution and to determine the tax deductibility of the contribution; including an understanding that I must be covered under a “High Deductible Health Plan” for annual contribution eligibility. I agree that I will consult with my tax or legal advisor if I need advice. I acknowledge that Deerwood Bank cannot and does not provide me with tax or legal advice. I am solely responsible for determining the tax consequences of all distributions. I acknowledge that the information provided is subject to Policy. If applicable, I hereby apply for a Point of Sale (POS) Card to be used in conjunction with this account. I agree that use of the POS Card will be subject to the terms and conditions obtained in the Deposit Account Agreement and Disclosure and Regulation E Disclosure that will be provided to me. I authorize Deerwood Bank to retain this application and any other credit information, even if this POS Card is not granted. I agree not to use the POS Card Service in any illegal manner.</blockquote>
+                <blockquote style="font-size: 0.8em; padding: 5px; border: 1px solid black; font-weight: bold">T.I.N./Backup Withholding. Under penalties of perjury, I certify (1) that the number shown is my correct taxpayer ID number or social security number, (2) that I am a U.S. person (including U.S. resident alien),(3) and that I am not subject to backup withholding because (a) I am exempt from backup withholding or (b) because I have not been notified by the IRS that I am subject to backup withholding as a result of failure to report all interest or dividends or (c) because the IRS has notified me that I am no longer subject to backup withholding. The Internal Revenue Service does not require your consent to any provision of this document other than the certifications required to avoid backup withholding.</blockquote>
+                <blockquote style="font-size: 0.8em;"><span style="font-weight: bold">Minnesota Legal Requirement.</span> Check mark if applicable.</blockquote>
+
+                <div data-column-span="2">
+                    <div data-field-span="1">
+                        <input type="checkbox" id="account-close-legal-requirement" name="account-close-legal-requirement"><label for="account-close-legal-requirement">I have not had a transaction account closed at this or another financial intermediary within 12 months before completing this Application.</label>
+                    </div>
+                    <div data-field-span="1">
+                        <input type="checkbox" id="criminal-legal-requirment" name="criminal-legal-requirment"><label for="criminal-legal-requirment">I have not been convicted of a criminal offense because of the use of a check or other similar items within 24 months of making this Application.</label>
+                    </div>
+                </div>
+
+                <br>
+
+                <div data-row-span="1">
+                    <div data-field-span="1">
+                <input type="checkbox" id="signature-requirment" name="signature-requirment" required><label for="signature-requirment">By checking this box, you agree to the above text.</label>
+                </div>
+                </div>
+
+            </fieldset>
+
+            <br><h2>HSA Designation of Beneficiary Form</h2>
+
+            <fieldset><legend>Designation of Beneficiary</legend><br />
+
+                <blockquote><label style="font-weight: bold;">A. Primary Beneficiaries.</label><br>In the event of my death, pay my HSA balance to the following primary beneficiaries according to the percentages indicted. If more than one primary beneficiary is designated and no percentages are indicated, the beneficiaries will be deemed to own equal share percentages in the HSA. If a primary beneficiary dies before me, his or her share shall be reallocated on a pro-rata basis to any remaining primary beneficiaries.</blockquote>
+
+                <div data-row-span="6">
+                    <div data-field-span="2"><label>*Name and Address</label></div>
+                    <div data-field-span="1"><label>*SSN</label></div>
+                    <div data-field-span="1"><label>*Relationship</label></div>
+                    <div data-field-span="1"><label>*Date of Birth</label></div>
+                    <div data-field-span="1"><label>*Percentage</label></div>
+                </div>
+                <div data-row-span="6">
+                    <div data-field-span="2"><input type="text" placeholder="name/address 1" name="first-beneficiary-name-address"></div>
+                    <div data-field-span="1"><input type="text" placeholder="SSN 1" name="first-beneficiary-ssn"></div>
+                    <div data-field-span="1"><input type="text" placeholder="Relationship 1" name="first-beneficiary-relationship"></div>
+                    <div data-field-span="1"><input type="text" placeholder="Date of Birth 1" name="first-beneficiary-birth"></div>
+                    <div data-field-span="1"><input type="text" placeholder="Percentage 1" name="first-beneficiary-percentage"></div>
+                </div>
+                <div data-row-span="6">
+                    <div data-field-span="2"><input type="text" placeholder="name/address 2" name="second-beneficiary-name-address"></div>
+                    <div data-field-span="1"><input type="text" placeholder="SSN 2" name="second-beneficiary-ssn"></div>
+                    <div data-field-span="1"><input type="text" placeholder="Relationship 2" name="second-beneficiary-relationship"></div>
+                    <div data-field-span="1"><input type="text" placeholder="Date of Birth 2" name="second-beneficiary-birth"></div>
+                    <div data-field-span="1"><input type="text" placeholder="Percentage 2" name="second-beneficiary-percentage"></div>
+                </div>
+                <div data-row-span="6">
+                    <div data-field-span="2"><input type="text" placeholder="name/address 3" name="third-beneficiary-name-address"></div>
+                    <div data-field-span="1"><input type="text" placeholder="SSN 3" name="third-beneficiary-ssn"></div>
+                    <div data-field-span="1"><input type="text" placeholder="Relationship 3" name="third-beneficiary-relationship"></div>
+                    <div data-field-span="1"><input type="text" placeholder="Date of Birth 3" name="third-beneficiary-birth"></div>
+                    <div data-field-span="1"><input type="text" placeholder="Percentage 3" name="third-beneficiary-percentage"></div>
+                </div>
+                <div data-row-span="6">
+                    <div data-field-span="2"><input type="text" placeholder="name/address 4" name="fourth-beneficiary-name-address"></div>
+                    <div data-field-span="1"><input type="text" placeholder="SSN 4" name="fourth-beneficiary-ssn"></div>
+                    <div data-field-span="1"><input type="text" placeholder="Relationship 4" name="fourth-beneficiary-relationship"></div>
+                    <div data-field-span="1"><input type="text" placeholder="Date of Birth 4" name="fourth-beneficiary-birth"></div>
+                    <div data-field-span="1"><input type="text" placeholder="Percentage 4" name="fourth-beneficiary-percentage"></div>
+                </div>
+                <span>*All Primary Beneficiary Information is Required</span>
+
+                <blockquote><label style="font-weight: bold;">B. Contingent Beneficiaries.</label><br>If all of my primary beneficiaries die before me, pay my HSA balance to the following contingent beneficiaries according to the percentages indicated. If a contingent beneficiary dies before me, his or her share shall be reallocated on a pro-rata basis to any remaining contingent beneficiaries.</blockquote>
+
+                <div data-row-span="6">
+                    <div data-field-span="2"><label>*Name and Address</label></div>
+                    <div data-field-span="1"><label>*SSN</label></div>
+                    <div data-field-span="1"><label>*Relationship</label></div>
+                    <div data-field-span="1"><label>*Date of Birth</label></div>
+                    <div data-field-span="1"><label>*Percentage</label></div>
+                </div>
+                <div data-row-span="6">
+                    <div data-field-span="2"><input type="text" placeholder="name/address 1" name="first-contingent-beneficiary-name-address"></div>
+                    <div data-field-span="1"><input type="text" placeholder="SSN 1" name="first-contingent-beneficiary-ssn"></div>
+                    <div data-field-span="1"><input type="text" placeholder="Relationship 1" name="first-contingent-beneficiary-relationship"></div>
+                    <div data-field-span="1"><input type="text" placeholder="Date of Birth 1" name="first-contingent-beneficiary-birth"></div>
+                    <div data-field-span="1"><input type="text" placeholder="Percentage 1" name="first-contingent-beneficiary-percentage"></div>
+                </div>
+                <div data-row-span="6">
+                    <div data-field-span="2"><input type="text" placeholder="name/address 2" name="second-contingent-beneficiary-name-address"></div>
+                    <div data-field-span="1"><input type="text" placeholder="SSN 2" name="second-contingent-beneficiary-ssn"></div>
+                    <div data-field-span="1"><input type="text" placeholder="Relationship 2" name="second-contingent-beneficiary-relationship"></div>
+                    <div data-field-span="1"><input type="text" placeholder="Date of Birth 2" name="second-contingent-beneficiary-birth"></div>
+                    <div data-field-span="1"><input type="text" placeholder="Percentage 2" name="second-contingent-beneficiary-percentage"></div>
+                </div>
+                <div data-row-span="6">
+                    <div data-field-span="2"><input type="text" placeholder="name/address 3" name="third-contingent-beneficiary-name-address"></div>
+                    <div data-field-span="1"><input type="text" placeholder="SSN 3" name="third-contingent-beneficiary-ssn"></div>
+                    <div data-field-span="1"><input type="text" placeholder="Relationship 3" name="third-contingent-beneficiary-relationship"></div>
+                    <div data-field-span="1"><input type="text" placeholder="Date of Birth 3" name="third-contingent-beneficiary-birth"></div>
+                    <div data-field-span="1"><input type="text" placeholder="Percentage 3" name="third-contingent-beneficiary-percentage"></div>
+                </div>
+                <div data-row-span="6">
+                    <div data-field-span="2"><input type="text" placeholder="name/address 4" name="fourth-contingent-beneficiary-name-address"></div>
+                    <div data-field-span="1"><input type="text" placeholder="SSN 4" name="fourth-contingent-beneficiary-ssn"></div>
+                    <div data-field-span="1"><input type="text" placeholder="Relationship 4" name="fourth-contingent-beneficiary-relationship"></div>
+                    <div data-field-span="1"><input type="text" placeholder="Date of Birth 4" name="fourth-contingent-beneficiary-birth"></div>
+                    <div data-field-span="1"><input type="text" placeholder="Percentage 4" name="fourth-contingent-beneficiary-percentage"></div>
+                </div>
+                <span>*All Contingent Beneficiary Information is Required</span>
+
+                <blockquote><label style="font-weight: bold;">C. Spousal Consent.</label><br>Complete only if you name someone other than your spouse as a primary beneficiary. If you are married and name someone other than your spouse as the primary beneficiary, complete this section. Consult your tax or legal advisor with questions regarding naming beneficiaries in community or marital property states. </blockquote>
+
+                <input type="checkbox" id="spousal-consent"
+                       name="spousal-consent"><label for="spousal-consent">By checking this box, you authorize consent to name someone other than your spouse to as a primary beneficiary.</label>
+
+            </fieldset>
+
+            <h2>HSA Authorized Signer (Optional)</h2>
+
+<p><b>Authorized Signer.</b> If you want your spouse or other party to have access to the HSA, please complete the following section with the authorized signer’s information.</p>
+
+            <fieldset>*The following must be completed by the authorized signer.<legend></legend>
+            </fieldset>
+
+            <div data-row-span="4">
+                <div data-field-span="2"><label>Authorized Name</label><input type="text" name="authorized-signer-name"></div>
+                <div data-field-span="1"><label>SSN</label><input type="text" name="authorized-signer-ssn"></div>
+                <div data-field-span="1"><label>Date of Birth</label><input type="text" name="authorized-signer-birth"></div>
+            </div>
+
+            <div data-row-span="6">
+                <div data-field-span="3"><label>Mailing Address</label><input type="text" name="authorized-signer-mailing-address"></div>
+                <div data-field-span="1"><label>City</label><input type="text" name="authorized-signer-city"></div>
+                <div data-field-span="1"><label>State</label><input type="text" name="authorized-signer-state"></div>
+                <div data-field-span="1"><label>Zip</label><input type="text" name="authorized-signer-zip"></div>
+            </div>
+
+            <div data-row-span="5">
+                <div data-field-span="2"><label>Driver's License #</label><input type="text" name="authorized-signer-driver-license"></div>
+                <div data-field-span="1"><label>State Issued</label><input type="text" name="authorized-signer-driver-issue-state"></div>
+                <div data-field-span="1"><label>Issue Date</label><input type="text" name="authorized-signer-driver-issue-date"></div>
+                <div data-field-span="1"><label>Expiration Date</label><input type="text" name="authorized-signer-driver-expiration-date"></div>
+            </div>
+
+            <div data-row-span="3">
+                <div data-field-span="1"><label>Second debit card for authorized signer?</label>
+                    <input id="authorized-signer-debit-yes" name="authorized-signer-debit" type="radio"><label>yes</label>
+                    <input id="authorized-signer-debit-no" name="authorized-signer-debit" type="radio"><label>no</label>
+                </div>
+            </div><br>
+
+            <input type="submit" value="Submit">
+        </form>
+
+    </div>
+</body>

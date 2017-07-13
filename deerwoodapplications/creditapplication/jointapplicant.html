@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<head>
+	  <title>Joint Applicant</title>
+	  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	  <link rel="stylesheet" type="text/css" href="../public/gridforms/gridforms.css">
+	  <script type="text/javascript" src="../public/gridforms/gridforms.js"></script>
+	  <script type="text/javascript" src="../test.js"></script>
+	  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+</head>
+<body>
+    <img style="display: block; margin: 0 auto;" src="../deerwood.png">
+	  <h2 style="text-align: center; font-size: 1.0em;">This is the form for joint
+	      individuals filing on joint assets. If this isn't correct, return to the
+	      <a href="switch.html">previous page</a>.</h1>
+
+	  <form class="grid-form" method="POST" action="/action.php">
+		    <fieldset> <legend></legend>
+
+	          <div data-row-span="7">
+                <div data-field-span="2"><label>Loan or Credit Line Requested:</label>
+                    <input type="text" name="line-requested">
+                </div>
+                <div data-field-span="2"><label>Purpose:</label>
+                    <input type="text" name="purpose">
+                </div>
+                <div data-field-span="1"><label>Months to Repay:</label>
+                    <input type="text" name="months-to-repay">
+                </div>
+                <div data-field-span="2"><label>Have you ever had a loan with
+                    this bank?:</label>
+                    <input id="b1" name="used-us-before" type="radio"><label for="b1">yes</label>
+                    <input id="b2" name="used-us-before" type="radio"><label for="b2">no</label>
+                </div>
+            </div>
+        </fieldset><br><br>
+
+        <fieldset>
+            <legend>Applicant</legend>
+
+            <div data-row-span="5">
+                <div data-field-span="3"> <label>Full Name:</label>
+                    <input type="text" name="full-name">
+                </div>
+
+                <div data-field-span="2"> <label>Drivers License #:</label>
+                    <input type="text" name="full-name">
+                </div>
+            </div>
+
+            <div data-row-span="5">
+                <div data-field-span="3"><label>Address:</label>
+                    <input type="text" name="address" placeholder="1600 Pennsylvania Ave NW">
+                </div>
+
+                <div data-field-span="1"><label>City:</label>
+                    <input type="text" name="city" placeholder="Washington">
+                </div>
+
+                <div data-field-span="1"><label>State/zip:</label>
+                    <input type="text" name="state-and-zip" placeholder="DC 20500">
+                </div>
+            </div>
+
+            <div data-row-span="5">
+                <div data-field-span="1"><label>County:</label>
+                    <input type="text" name="county">
+                </div>
+                <div data-field-span="1"><label>Time at this Address:</label>
+                    <input type="text" name="time-at-address" placeholder="x years, y months">
+                </div>
+                <div data-field-span="1"><label>Telephone #:</label>
+                    <input type="text" name="telephone" placeholder="(215) 825-8946">
+                </div>
+                <div data-field-span="1"><label>Social Security #:</label>
+                    <input type="text" name="social-security" placeholder="xxx-xx-xxxx">
+                </div>
+                <div data-field-span="1"><label>Birth Date:</label>
+                    <input type="text" name="date-of-birth" placeholder="May 18, 1872">
+                </div>
+            </div>
+
+            <div data-row-span="5">
+                <div data-field-span="3"><label>Previous Address (if less than 2 years at present address):</label>
+                    <input type="text" name="previous-address" placeholder="1600 Pennsylvania Ave NW">
+                </div>
+                <div data-field-span="1"><label>Previous City:</label>
+                    <input type="text" name="previous-city" placeholder="Washington">
+                </div>
+                <div data-field-span="1"><label>Previous State/zip</label>
+                    <input type="text" name="previous-state-and-zip" placeholder="DC 20500">
+                </div>
+            </div>
+
+            <div data-row-span="3">
+                <div data-field-span="1"><label>Time at Previous Address:</label>
+                    <input type="text" name="time-at-address" placeholder="x years, y months">
+                </div>
+
+                <div data-field-span="1"><label># of Dependents:</label>
+                    <select name="dependents">
+                        <option value="0" title="0">0</option>
+                        <option value="1" title="1">1</option>
+                        <option value="2" title="2">2</option>
+                        <option value="3" title="3">3</option>
+                        <option value="4" title="4">4</option>
+                        <option value="5" title="5">5</option>
+                        <option value="6" title="6">6</option>
+                        <option value="7" title="7">7</option>
+                        <option value="8" title="8">8</option>
+                    </select>
+                </div>
+
+                <div data-field-span="1"><label>Dependents' Ages:</label>
+                    <input type="text" name="dependent-ages">
+                </div>
+            </div>
+
+            <div data-row-span="5">
+                <div data-field-span="1"><label>Employer's Name:</label>
+                    <input type="text" name="employer-name" placeholder="Bill Gates">
+                </div>
+                <div data-field-span="1"><label>Kind of Business:</label>
+                    <input type="text" name="business-kind" placeholder="Software Company">
+                </div>
+                <div data-field-span="1"><label>Position:</label>
+                    <input type="text" name="position" placeholder="Software Developer">
+                </div>
+                <div data-field-span="1"><label>Gross Pay $:</label>
+                    <input type="text" name="gross-pay" placeholder="$3,000">
+                    <input id="gp1-1" name="gross-pay-period" type="radio"><label for="gp1-1">Weekly</label><br>
+                    <input id="gp2-1" name="gross-pay-period" type="radio"><label for="gp2-1">Bi-monthly</label><br>
+                    <input id="gp3-1" name="gross-pay-period" type="radio"><label for="gp3-1">Monthly</label><br>
+                    <input id="gp4-1" name="gross-pay-period" type="radio"><label for="gp4-1">Yearly</label><br>
+                </div>
+                <div data-field-span="1"><label>Length of Employment:</label>
+                    <input type="text" name="employment-length" placeholder="36 months">
+                </div>
+
+            </div>
+            <div data-row-span="5">
+                <div data-field-span="2"><label>Employer Address:</label>
+                    <input type="text" name="employer-address">
+                </div>
+
+                <div data-field-span="1"><label>City:</label>
+                    <input type="text" name="city" placeholder="Redmond">
+                </div>
+
+                <div data-field-span="1"><label>State/zip:</label>
+                    <input type="text" name="state-and-zip" placeholder="Washington 98053">
+                </div>
+                <div data-field-span="1"><label>Teleophone #:</label>
+                    <input type="text" name="employer-telephone" placeholder="(952) 806-1110">
+                </div>
+            </div>
+
+            <div data-row-span="5">
+                <div data-field-span="2"><label>Previous Employer (if less
+                    than 2 years with present employer):</label>
+                    <input type="text" name="previous-employer-name" placeholder="Steve Jobs">
+                </div>
+                <div data-field-span="2"><label>Address:</label>
+                    <input type="text" name="previous-employer-address">
+                </div>
+                <div data-field-span="1"><label>Length of Employment:</label>
+                    <input type="text" name="previous-employment-length">
+                </div>
+            </div>
+
+            <div data-row-span="6">
+                <div data-field-span="2"><label>Nearest Relative Not Living With You:</label>
+                    <input type="text" name="nearest-relative-name" placeholder="Aunt Jemima">
+                </div>
+                <div data-field-span="2"><label>Address:</label>
+                    <input type="text" name="nearest-relative-address">
+                </div>
+                <div data-field-span="1"><label>Telephone #:</label>
+                    <input type="text" name="nearest-relative-telephone" placeholder="(xxx) xxx-xxxx">
+                </div>
+                <div data-field-span="1"><label>Relationship:</label>
+                    <input type="text" name="nearest-relative-relationship" placeholder="aunt">
+                </div>
+            </div>
+
+            <div data-row-span="5">
+                <div data-field-span="2"><label>1st Personal Reference:</label>
+                    <input type="text" name="first-personal-reference-name">
+                </div>
+                <div data-field-span="2"><label>Address:</label>
+                    <input type="text" name="first-personal-reference-address">
+                </div>
+                <div data-field-span="1"><label>Telephone #:</label>
+                    <input type="text" name="first-personal-reference-telephone" placeholder="(xxx) xxx-xxxx">
+                </div>
+            </div>
+
+            <div data-row-span="5">
+                <div data-field-span="2"><label>2nd Personal Reference:</label>
+                    <input type="text" name="second-personal-reference-name">
+                </div>
+                <div data-field-span="2"><label>Address:</label>
+                    <input type="text" name="second-personal-reference-address">
+                </div>
+                <div data-field-span="1"><label>Telephone #:</label>
+                    <input type="text" name="second-personal-reference-telephone" placeholder="(xxx) xxx-xxxx">
+                </div>
+            </div>
+
+        </fieldset><br><br>
+
+        <fieldset><legend>Joint Applicant</legend>
+
+            <div data-row-span="3">
+                <div data-field-span="2"><label>Full Name:</label>
+                    <input type="text" name="joint-applicant-name">
+                </div>
+                <div data-field-span="1"><label>Drivers License #:</label>
+                    <input type="text" name="joint-applicant-license">
+                </div>
+            </div>
+
+            <div data-row-span="5">
+                <div data-field-span="3"><label>Address:</label>
+                    <input type="text" name="joint-applicant-address">
+                </div>
+                <div data-field-span="1"><label>City:</label>
+                    <input type="text" name="joint-applicant-city">
+                </div>
+                <div data-field-span="1"><label>State/Zip:</label>
+                    <input type="text" name="joint-applicant-state">
+                </div>
+            </div>
+
+            <div data-row-span="5">
+                <div data-field-span="1"><label>County:</label>
+                    <input type="text" name="joint-applicant-county">
+                </div>
+                <div data-field-span="1"><label>Time at this Address:</label>
+                    <input type="text" name="joint-applicant-time-at-address">
+                </div>
+                <div data-field-span="1"><label>Telephone #:</label>
+                    <input type="text" name="joint-applicant-telephone"
+                    placeholder="(xxx) xxx-xxxx">
+                </div>
+                <div data-field-span="1"><label>Social Security #:</label>
+                    <input type="text" name="joint-applicant-social">
+                </div>
+                <div data-field-span="1"><label>Birth Date:</label>
+                    <input type="text" name="joint-applicant-birth-date">
+                </div>
+            </div>
+
+            <div data-row-span="5">
+                <div data-field-span="3"><label>Previous Address (If less than 2
+                    years at present address):</label>
+                    <input type="text" name="joint-applicant-previous-address">
+                </div>
+                <div data-field-span="1"><label>City:</label>
+                    <input type="text" name="joint-applicant-previous-city">
+                </div>
+                <div data-field-span="1"><label>State/Zip:</label>
+                    <input type="text" name="joint-applicant-previous-state">
+                </div>
+            </div>
+
+            <div data-row-span="3">
+                <div data-field-span="1"><label>Time at Previous Address:</label>
+                    <input type="text" name="joint-applicant-time-at-previous-address"
+                           placeholder="x years, y months">
+                </div>
+
+                <div data-field-span="1"><label># of Dependents:</label>
+                    <select name="dependents">
+                        <option value="0" title="0">0</option>
+                        <option value="1" title="1">1</option>
+                        <option value="2" title="2">2</option>
+                        <option value="3" title="3">3</option>
+                        <option value="4" title="4">4</option>
+                        <option value="5" title="5">5</option>
+                        <option value="6" title="6">6</option>
+                        <option value="7" title="7">7</option>
+                        <option value="8" title="8">8</option>
+                    </select>
+                </div>
+
+                <div data-field-span="1"><label>Dependents' Ages:</label>
+                    <input type="text" name="joint-applicant-dependent-ages">
+                </div>
+            </div>
+
+            <div data-row-span="5">
+                <div data-field-span="1"><label>Employer's Name:</label>
+                    <input type="text" name="joint-applicant-employer-name">
+                </div>
+
+                <div data-field-span="1"><label>Kind of Business:</label>
+                    <input type="text" name="joint-applicant-employer-kind-of-business">
+                </div>
+
+                <div data-field-span="1"><label>Position:</label>
+                    <input type="text" name="joint-applicant-position">
+                </div>
+
+                <div data-field-span="1"><label>Gross Pay $:</label>
+                    <input type="text" name="joint-applicant-gross-pay" placeholder="$3,000">
+                    <input id="jagp1" name="joint-applicant-gross-pay-period" type="radio"><label for="jagp1">Weekly</label><br>
+                    <input id="jagp2" name="joint-applicant-gross-pay-period" type="radio"><label for="jagp2">Bi-monthly</label><br>
+                    <input id="jagp3" name="joint-applicant-gross-pay-period" type="radio"><label for="jagp3">Monthly</label><br>
+                    <input id="jagp4" name="joint-applicant-gross-pay-period" type="radio"><label for="jagp4">Yearly</label><br>
+                </div>
+
+                <div data-field-span="1"><label>Length of Employment:</label>
+                    <input type="text" name="joint-applicant-employment-length">
+                </div>
+            </div>
+
+            <div data-row-span="5">
+                <div data-field-span="3"><label>Employer's Address:</label>
+                    <input type="text" name="joint-applicant-employer-address">
+                </div>
+                <div data-field-span="1"><label>City:</label>
+                    <input type="text" name="joint-applicant-employer-city">
+                </div>
+                <div data-field-span="1"><label>State/Zip:</label>
+                    <input type="text" name="joint-applicant-employer-state">
+                </div>
+            </div>
+
+            <div data-row-span="5">
+                <div data-field-span="1"><label>Previous Employer (if less than
+                    2 years with present employer):</label>
+                    <input type="text" name="joint-applicant-previous-employer">
+                </div>
+                <div data-field-span="3"><label>Previous Employer Address:</label>
+                    <input type="text" name="joint-applicant-previous-employer-address">
+                </div>
+                <div data-field-span="1"><label>Length of Employment:</label>
+                    <input type="text" name="joint-applicant-previous-employment-length">
+                </div>
+            </div>
+
+            <div data-row-span="5">
+                <div data-field-span="1"><label>Nearest Relative Not Living with You:</label>
+                    <input type="text" name="joint-applicant-nearest-relative">
+                </div>
+                <div data-field-span="3"><label>Nearest Relative Address:</label>
+                    <input type="text" name="joint-applicant-nearest-relative-address">
+                </div>
+                <div data-field-span="1"><label>Telephone #:</label>
+                    <input type="text" name="joint-applicant-nearest-relative-telephone"
+                           placeholder="(xxx) xxx-xxxx">
+                </div>
+            </div>
+
+             <div data-row-span="5">
+                <div data-field-span="1"><label>First Personal Reference:</label>
+                    <input type="text" name="joint-applicant-first-personal-reference">
+                </div>
+                <div data-field-span="3"><label>First Personal Reference Address:</label>
+                    <input type="text" name="joint-applicant-first-personal-reference-address">
+                </div>
+                <div data-field-span="1"><label>First Personal Reference Telephone #:</label>
+                    <input type="text" name="joint-applicant-first-personal-reference-telephone"
+                           placeholder="(xxx) xxx-xxxx">
+                </div>
+            </div>
+             <div data-row-span="5">
+                <div data-field-span="1"><label>First Personal Reference:</label>
+                    <input type="text" name="joint-applicant-second-personal-reference">
+                </div>
+                <div data-field-span="3"><label>First Personal Reference Address:</label>
+                    <input type="text" name="joint-applicant-second-personal-reference-address">
+                </div>
+                <div data-field-span="1"><label>First Personal Reference Telephone #:</label>
+                    <input type="text" name="joint-applicant-second-personal-reference-telephone"
+                           placeholder="(xxx) xxx-xxxx">
+                </div>
+            </div>
+
+       </fieldset><br><br>
+
+        <fieldset><legend>Loan or Credit</legend>
+
+            <div data-row-span="2">
+                <div data-field-span="1">Income other than wages or salary (do
+                    not include alimony, child support or maintenance):
+                    <input type="text" name="income" placeholder="$3,000">
+                    <input id="gp1-2" name="income-per" type="radio"><label for="gp1-2">Weekly</label><br>
+                    <input id="gp2-2" name="income-per" type="radio"><label for="gp2-2">Bi-monthly</label><br>
+                    <input id="gp3-2" name="income-per" type="radio"><label for="gp3-2">Monthly</label><br>
+                    <input id="gp4-2" name="income-per" type="radio"><label for="gp4-2">Yearly</label><br>
+
+                </div>
+                <div data-field-span="1">Source of Other Income:
+                    <input type="text" name="income-other-source">
+                </div>
+            </div>
+
+            <div data-row-span="2">
+                <div data-field-span="1">Monthly income from alimony, child
+                    support or maintenance (complete only if you elect to rely on
+                    such income to support your application):
+                    <input name="alimony-etc-amount" type="text" placeholder="$"/>
+                </div>
+
+                <div data-field-span="1">How long have payments been received?
+                <input name="alimony-etc-length" type="text" placeholder="1 year, 2 months"/></div>
+            </div>
+
+            <div data-row-span="1">
+                <div data-field-span="1">Name, address, and employer of person
+                supplying alimony, child support or maintenance:
+                    <input name="alimony-payer-identity" type="text" value=""/>
+                </div>
+            </div>
+
+            <blockquote>
+                <b>Assets and Liabilities</b> This section should be conpmleted
+                with information from both the Applicant and the Joint Applicant
+                (Please mark applicant-related information with an "A")<br>
+
+                <b>Liabilities and Pledged Assets</b> (List the creditor's name,
+                    address, and account number for all outstanding debts,
+                    including automobile loans, revolving charge accounts, real
+                    estate loans, alimony, child support, stock pledges, etc.)
+            </blockquote>
+
+            <div data-row-span="3">
+                <div data-field-span="2"><b>Assets</b> (description)
+                </div>
+                <div data-field-span="1">Cash or Market Value
+                </div>
+            </div>
+
+            <div data-row-span="3">
+                <div data-field-span="2">Cash Deposit toward Purchase Held by:
+                    <input name="asset-cash-deposit-holder" type="text"/>
+                </div>
+                <div data-field-span="1">
+                    <input name="asset-value-one" type="text" placeholder="$"/>
+                </div>
+            </div>
+
+            <div data-row-span="3">
+                <div data-field-span="2">List checking and savings accounts below (name
+                    and address of bank, S&L or credit union and account #)
+                </div>
+                <div data-field-span="1">
+                </div>
+            </div>
+
+            <div data-row-span="3">
+                <div data-field-span="2">account one
+                    <input name="asset-account-one" type="text" value=""/>
+                </div>
+                <div data-field-span="1">
+                    <input name="asset-account-value-one" type="text" placeholder="$"/>
+                </div>
+            </div>
+
+             <div data-row-span="3">
+                <div data-field-span="2">account two
+                    <input name="asset-account-two" type="text" value=""/>
+                </div>
+                <div data-field-span="1">
+                    <input name="asset-account-value-two" type="text" placeholder="$"/>
+                </div>
+            </div>
+
+            <div data-row-span="3">
+                <div data-field-span="2">account three
+                    <input name="asset-account-three" type="text"/>
+                </div>
+                <div data-field-span="1">
+                    <input name="asset-account-value-three" type="text" placeholder="$"/>
+                </div>
+            </div>
+
+            <div data-row-span="3">
+                <div data-field-span="2">account four
+                    <input name="asset-account-four" type="text"/>
+                </div>
+                <div data-field-span="1">
+                    <input name="asset-account-value-four" type="text" placeholder="$"/>
+                </div>
+            </div>
+
+            <div data-row-span="3">
+                <div data-field-span="2"><b>Subtotal Liquid Assets</b>
+                </div>
+                <div data-field-span="1">
+                    <input name="asset-account-value-subtotal" type="text" placeholder="$"/>
+                </div>
+            </div>
+
+            <div data-row-span="3">
+                <div data-field-span="2">Real Estate Owned:
+                    <input name="real-estate-owned" type="text" value=""/>
+                </div>
+                <div data-field-span="1">
+                    <input name="real-estate-owned-value" type="text" placeholder="$"/>
+                </div>
+            </div>
+
+             <div data-row-span="3">
+                <div data-field-span="2">Vested Interest in Retirement Fund:
+                    <input name="retirement-fund" type="text" value=""/>
+                </div>
+                <div data-field-span="1">
+                    <input name="retirement-fund-value" type="text" placeholder="$"/>
+                </div>
+            </div>
+
+            <div data-row-span="3">
+                <div data-field-span="2">Automobile Owned (make and year):
+                    <input name="automobile-one" type="text"/>
+                </div>
+                <div data-field-span="1">
+                    <input name="automobile-one-value" type="text" placeholder="$"/>
+                </div>
+            </div>
+
+            <div data-row-span="3">
+                <div data-field-span="2">Automobile Owned (make and year):
+                    <input name="automobile-two" type="text"/>
+                </div>
+                <div data-field-span="1">
+                    <input name="automobile-two-value" type="text" placeholder="$"/>
+                </div>
+            </div>
+
+            <div data-row-span="3">
+                <div data-field-span="2">Automobile Owned (make and year):
+                    <input name="automobile-three" type="text"/>
+                </div>
+                <div data-field-span="1">
+                    <input name="automobile-three-value" type="text" placeholder="$"/>
+                </div>
+            </div>
+
+            <div data-row-span="3">
+                <div data-field-span="2">Automobile Owned (make and year):
+                    <input name="automobile-four" type="text"/>
+                </div>
+                <div data-field-span="1">
+                    <input name="automobile-four-value" type="text" placeholder="$"/>
+                </div>
+            </div>
+
+            <div data-row-span="3">
+                <div data-field-span="2">Other assets (itemize):
+                    <input name="other-assets" type="text"/>
+                </div>
+                <div data-field-span="1">
+                    <input name="other-assets-value" type="text" placeholder="$"/>
+                </div>
+            </div>
+
+            <div data-row-span="3">
+                <div data-field-span="2"><b>Total Assets</b></div>
+                <div data-field-span="1"><b>a.</b>
+                    <input name="total-assets-value" type="text" placeholder="$"/>
+                </div>
+            </div>
+
+            <div data-row-span="4">
+                <div data-field-span="2"><b>Liabilities</b> (Name and Address of
+                    Company and Account #)
+                </div>
+                <div data-field-span="1">Monthly Payment / Months Left to Pay
+                </div>
+                <div data-field-span="1">Unpaid Balance
+                </div>
+            </div>
+
+            <div data-row-span="4">
+                <div data-field-span="2">Mortgagor or Landlord
+                    <input name="liabilities-one" type="text" value=""/>
+                </div>
+                <div data-field-span="1">
+                    <input name="liabilities-payment-months-one" type="text" placeholder="$, months"/>
+                </div>
+                <div data-field-span="1">
+                    <input name="liabilities-unpaid-balance-one" type="text" placeholder="$"/>
+                </div>
+            </div>
+
+            <div data-row-span="4">
+                <div data-field-span="2">Mortgagor or Landlord
+                    <input name="liabilities-two" type="text" value=""/>
+                </div>
+                <div data-field-span="1">
+                    <input name="liabilities-payment-months-two" type="text" placeholder="$, months"/>
+                </div>
+                <div data-field-span="1">
+                    <input name="liabilities-unpaid-balance-two" type="text" placeholder="$"/>
+                </div>
+            </div>
+
+            <div data-row-span="4">
+                <div data-field-span="2">Mortgagor or Landlord
+                    <input name="liabilities-three" type="text" value=""/>
+                </div>
+                <div data-field-span="1">
+                    <input name="liabilities-payment-months-three" type="text" placeholder="$, months"/>
+                </div>
+                <div data-field-span="1">
+                    <input name="liabilities-unpaid-balance-three" type="text" placeholder="$"/>
+                </div>
+            </div>
+
+            <div data-row-span="4">
+                <div data-field-span="2">Mortgagor or Landlord
+                    <input name="liabilities-four" type="text" value=""/>
+                </div>
+                <div data-field-span="1">
+                    <input name="liabilities-payment-months-four" type="text" placeholder="$, months"/>
+                </div>
+                <div data-field-span="1">
+                    <input name="liabilities-unpaid-balance-four" type="text" placeholder="$"/>
+                </div>
+            </div>
+
+            <div data-row-span="4">
+                <div data-field-span="2">Mortgagor or Landlord
+                    <input name="liabilities-five" type="text" value=""/>
+                </div>
+                <div data-field-span="1">
+                    <input name="liabilities-payment-months-five" type="text" placeholder="$, months"/>
+                </div>
+                <div data-field-span="1">
+                    <input name="liabilities-unpaid-balance-five" type="text" placeholder="$"/>
+                </div>
+            </div>
+
+            <div data-row-span="4">
+                <div data-field-span="2">Mortgagor or Landlord
+                    <input name="liabilities-six" type="text" value=""/>
+                </div>
+                <div data-field-span="1">
+                    <input name="liabilities-payment-months-six" type="text" placeholder="$, months"/>
+                </div>
+                <div data-field-span="1">
+                    <input name="liabilities-unpaid-balance-six" type="text" placeholder="$"/>
+                </div>
+            </div>
+
+            <div data-row-span="4">
+                <div data-field-span="2">Mortgagor or Landlord
+                    <input name="liabilities-seven" type="text" value=""/>
+                </div>
+                <div data-field-span="1">
+                    <input name="liabilities-payment-months-seven" type="text" placeholder="$, months"/>
+                </div>
+                <div data-field-span="1">
+                    <input name="liabilities-unpaid-balance-seven" type="text" placeholder="$"/>
+                </div>
+            </div>
+
+            <div data-row-span="4">
+                <div data-field-span="2">Mortgagor or Landlord
+                    <input name="liabilities-eight" type="text" value=""/>
+                </div>
+                <div data-field-span="1">
+                    <input name="liabilities-payment-months-eight" type="text" placeholder="$, months"/>
+                </div>
+                <div data-field-span="1">
+                    <input name="liabilities-unpaid-balance-eight" type="text" placeholder="$"/>
+                </div>
+            </div>
+
+            <div data-row-span="4">
+                <div data-field-span="2">Mortgagor or Landlord
+                    <input name="liabilities-nine" type="text" value=""/>
+                </div>
+                <div data-field-span="1">
+                    <input name="liabilities-payment-months-nine" type="text" placeholder="$, months"/>
+                </div>
+                <div data-field-span="1">
+                    <input name="liabilities-unpaid-balance-nine" type="text" placeholder="$"/>
+                </div>
+            </div>
+
+            <div data-row-span="3">
+                <div data-field-span="2">Alimony/Child Support/Separate
+                    maintenance Payments Owed to:
+                    <input name="liabilities-alimony-one" type="text" value=""/>
+                </div>
+                <div data-field-span="1">
+                    <input name="liabilities-alimony-payment-months-one" type="text" placeholder="$, months"/>
+                </div>
+            </div>
+
+            <div data-row-span="3">
+                <div data-field-span="2">Alimony/Child Support/Separate
+                    maintenance Payments Owed to:
+                    <input name="liabilities-alimony-two" type="text" value=""/>
+                </div>
+                <div data-field-span="1">
+                    <input name="liabilities-alimony-payment-months-two" type="text" placeholder="$, months"/>
+                </div>
+            </div>
+
+            <div data-row-span="3">
+                <div data-field-span="2">Alimony/Child Support/Separate
+                    maintenance Payments Owed to:
+                    <input name="liabilities-alimony-three" type="text" value=""/>
+                </div>
+                <div data-field-span="1">
+                    <input name="liabilities-alimony-payment-months-three" type="text" placeholder="$, months"/>
+                </div>
+            </div>
+
+            <div data-row-span="3">
+                <div data-field-span="2"><b>Total Liabilities</b>
+                </div>
+                <div data-field-span="1"><b>b.</b>
+                    <input name="total-liabilities-value" type="text" placeholder="$"/>
+                </div>
+            </div>
+
+            <div data-row-span="3">
+                <div data-field-span="2"><b>Net Worth (a minus b)</b>
+                </div>
+                <div data-field-span="1">
+                    <input name="asset-liabilities-net" type="text" placeholder="$"/>
+                </div>
+            </div>
+
+        </fieldset>
+
+        <fieldset> <legend></legend>
+
+            <div data-row-span="2">
+                <div data-field-span="1">Are you a cosigner, endorser or guarantor for anyone?<br>
+                    <input id="cosigner-endorser-guarantor-yes" name="cosigner-endorser-guarantor"
+                           type="radio"><label for="cosigner-endorser-guarantor-yes">Yes</label><br>
+                    <input id="cosigner-endorser-guarantor-no" name="cosigner-endorser-guarantor"
+                           type="radio"><label for="cosigner-endorser-guarantor-no">No</label><br>
+                </div>
+                <div data-field-span="1">Is this all you owe?<br>
+                    <input id="all-owed-yes" name="all-owed"
+                           type="radio"><label for="all-owed-yes">Yes</label><br>
+                    <input id="all-owed-no" name="all-owed"
+                           type="radio"><label for="all-owed-no">No</label><br>
+                </div>
+            </div>
+
+            <div data-row-span="2">
+                <div data-field-span="1">Are there any claims, suits, or
+                    judgements against you?<br>
+                    <input id="claims-yes" name="claims"
+                           type="radio"><label for="claims-yes">Yes</label><br>
+                    <input id="claims-no" name="claims"
+                           type="radio"><label for="claims-no">No</label><br>
+                </div>
+                <div data-field-span="1">Have you ever filed bankruptcy?<br>
+                    <input id="bankruptcy-yes" name="bankruptcy"
+                           type="radio"><label for="bankruptcy-yes">Yes</label><br>
+                    <input id="bankruptcy-no" name="bankruptcy"
+                           type="radio"><label for="bankruptcy-no">No</label><br>
+                </div>
+            </div>
+
+            <div data-row-span="2">
+                <div data-field-span="1">Other names in which you have
+                    maintained accounts:<br>
+                    <input id="other-names-yes" name="other-names"
+                           type="radio"><label for="other-names-yes">Yes</label><br>
+                    <input id="other-names-no" name="other-names"
+                           type="radio"><label for="other-names-no">No</label><br>
+                </div>
+                <div data-field-span="1">Have you ever been convicted of a felony?<br>
+                    <input id="felony-yes" name="felony"
+                           type="radio"><label for="felony-yes">Yes</label><br>
+                    <input id="felony-no" name="felony"
+                           type="radio"><label for="felony-no">No</label><br>
+                </div>
+            </div>
+
+        </fieldset><br><br>
+
+        <fieldset><legend>Insurance Disclosure for Credit Application</legend><br>
+
+            IMPORTANT! Please carefully read the disclaimer and understand its
+            contents<br>
+
+        </fieldset><br>
+
+        <blockquote>
+            <b>Purpose:</b> You have submitted an application for a loan. In
+            connection with your loan application, Lender may be soliciting,
+            offer to sell, or will sell you an insurance product or annuity.
+            Federal law requires Lender to prode you with the following
+            disclosures. <br>
+
+            <b>Credit Disclures:</b>
+            <ol>
+                <li>Lender, as a condition of granting you a loan, cannot
+                require that you purchase an insurance product or annuity from
+                Lender or any of its affiliates.</li>
+
+                <li>Lender, as a condition of granting you a loan, cannot
+                require your agreement not to obtain or prohibit you from
+                obtaining an insurance product or annuity from an unaffiliated
+                entity.</li>
+            </ol>
+        </blockquote>
+
+        <blockquote>
+            <b>For Applicants Pledging a Dwelling (First Mortgage Only):</b>
+        </blockquote>
+
+        <blockquote>
+            Everything stated in this application is correct to the best of my
+            knowldge. I understand that Deerwood Bank will retain this
+            application whether or not it is approved. The bank is authorized to
+            check my credit and employment history and to answer questions about
+            their credit experience with me.<br>
+
+            We may order an appraisal to determine the property's value and
+            charge you for this appraisal. We will promptly give you a copy of
+            any appraisal, even if your loan does not close. You can pay for an
+            additional appraisal for your own use at your own cost.<br>
+
+            You are entitled to receive a copy of any appraisal report or
+            valuation ('Valuation Report') developed in connection with your
+            application for credit at least three (3) business days prior to
+            your closing date. A copy of each Valuation Report developed in
+            connection with your credit application should have been delivered
+            to you at least three (3) or more business days prior to the closing
+            date.<br>
+
+            <b>Three (3) Day Appraisal Deliver Waiver</b><br>
+
+            <b>(for applicants pledging a dwelling where Deerwood Bank will be
+            in a first mortgage position)</b>
+
+            Pursuant to the Appraiser Independence Requirements, if an Appraisal
+            is used to determine a value for lending purposes, Deerwood Bank
+            (the Lender) will provide you with a copy of the appraisal.
+            Requirements are to provide you with this documentation no later
+            than three (3) days prior to closing of your loan.
+
+            By this notice you must agree to waive the three (3) day delivery
+            requirement.
+
+            You will still receive a copy of the appraisal as soon as the Lender
+            is able to process the information and provide it to you. However,
+            the Lender will not be held to the three (3) day delivery requirement.
+
+            Please note our standard practice is to provide you with a copy of
+            the appraisal at closing if you waive your right to the three (3)
+            day delivery requirement.
+        </blockquote>
+
+        <fieldset><legend>Covered Borrower Identification Statement</legend><br>
+
+            Federal law provides important protections to active duty mumbers of
+            the Armed Forces and their dependents. To ensure that these
+            protections are provided to eligible applicants, we require you to
+            check one of the following statements as applicable:<br>
+
+            <div data-column-span="3">
+                <div data-field-span="1"><br>
+                    <input id="covered-borrower-yes-army-etc"
+                           name="covered-borrower-radio"
+                           type="radio"><label
+                           for="covered-borrower-yes-army-etc">I am a regular or
+                           reserve member of the Army, Navy, Marine Corps, Air
+                           Force, or Coast guard, serving on active duty under a
+                           call or order that does not specify a periof of 30
+                           days or fewer</label><br>
+                </div>
+                <div data-field-span="1"><br>
+                    <input id="covered-borrower-yes-dependent"
+                           name="covered-borrower-radio" type="radio"><label
+                           for="covered-borrower-yes-dependent">I am a dependent
+                           of a member of the Armed Forces on active duty as
+                           described above, because I am the member's spouse, or
+                           the member's child under the age of eighteen years
+                           old, or I am an individual for whom the member
+                           provided more than one-half of my financial support
+                           for 180 days immediately preceding today's date.</label><br>
+                </div>
+                <div data-field-span="1"><br>
+                    <input id="covered-borrower-no-army-etc"
+                           name="covered-borrower-radio" type="radio"><label
+                           for="covered-borrower-no-army-etc">I am not a regular
+                           or reserve member of the Army, Navy, Marine Corps,
+                           Air Force, or Coast Guard, serving on active duty
+                           under a call or order that does not specify a period
+                           of 30 days or fewer (or dependent of such a
+                           member).</label><br>
+                </div>
+            </div>
+
+        </fieldset>
+
+        <blockquote>
+            By checking this box and submitting this request, all parties named
+            below are agreeing to the terms, conditions and disclosures associated
+            with this request. <br>
+
+            <input name="signature" type="checkbox" value="" required /> I agree
+            to the terms, conditions, and disclosures of this request as the
+            Primary Applicant.
+        </blockquote><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <!-- <div>Serialized Array</div> <div id=serializearray>asfdg</div> -->
+</body>
