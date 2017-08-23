@@ -10,6 +10,21 @@ important impact on the World Wide Web. If you're interested in what I've
 already done, check out these lists of things. Also please make sure to check
 back in sometime!
 
+### Current Works
+> NOTE: These are very much works in progress involving greater hurtles of managing time and learning technologies than actually implementing concepts.
+
+* Personal finance application concept
+  ([repository](https://github.com/JustenRickert/financial-tribble)). Idea is to
+  allow user to add collections of recurring payments, then using that to
+  reactively graph expected overall balances below. Eventually want to allow
+  input of individual payments, then using an interpolating function to guess
+  the recurring payments. Uses React/Redux, and Recharts.
+
+* Open world JavaScript video game concept
+  ([repository](https://github.com/JustenRickert/didactic-octo-waffle)).
+  Currently have implemented basic controls and a camera/scene to follow the
+  character around the map. Utilizes React and PIXI.
+
 ### School Papers
 
 * [Strategic Outcomes](/files/strategicoutcomes.pdf), [repository](//github.com/JustenRickert/papergame)
