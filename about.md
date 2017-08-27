@@ -14,7 +14,8 @@ back in sometime!
 > NOTE: These are very much works in progress involving greater hurtles of managing time and learning technologies than actually implementing concepts.
 
 * Personal finance application concept
-  ([repository](https://github.com/JustenRickert/financial-tribble)). Idea is to
+  ([repository](https://github.com/JustenRickert/financial-tribble),
+  [prototype]({{ site.baseurl }}/finapp/)). Idea is to
   allow user to add collections of recurring payments, then using that to
   reactively graph expected overall balances below. Eventually want to allow
   input of individual payments, then using an interpolating function to guess
