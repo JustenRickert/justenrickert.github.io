@@ -11,7 +11,6 @@ already done, check out these lists of things. Also please make sure to check
 back in sometime!
 
 ### Current Works
-> NOTE: These are very much works in progress involving greater hurtles of managing time and learning technologies than actually implementing concepts.
 
 * Personal finance application concept
   ([repository](https://github.com/JustenRickert/financial-tribble),
