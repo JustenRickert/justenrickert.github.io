@@ -6,9 +6,9 @@ date: 2017-09-27
 published: true
 ---
 
-My aunt Shelley asked me an interesting question about a weight loss competition
+My aunt Shelly asked me an interesting question about a weight loss competition
 she competed in. The goal of the competition was to see who could lose the most
-weight. To those who don't know, my aunt Shelley doesn't weigh very much, which
+weight. To those who don't know, my aunt Shelly doesn't weigh very much, which
 means that she started with a major disadvantage. After ending up losing the
 competition she thought her results were better than the other competitors
 somehow, so asked me how something like this could actually be calculated
@@ -19,13 +19,13 @@ better. She wanted to win that competition!
 First, lets consider some data needed for a weight loss competition. A
 contestant will have a weight, which means that we can calculate the weight at
 the beginning of the competition and at the end of it. In each competition with
-my cousin Shelley, we'll refer to her as $$s$$, there will be a weight for her
+my cousin Shelly, we'll refer to her as $$s$$, there will be a weight for her
 $$s_{i}$$ at the beginning and $$s_{f}$$ at the end of the competition. When
 there are multiple competitions, the function $$\nu$$ may differ. The differing
 functions, our collection of normalizing functions, can so be denoted $$\nu_{1},
 \nu_{2}, \dots, \nu_{N}$$.
 
-In a simple case where there are two contestants, one being my aunt Shelley and
+In a simple case where there are two contestants, one being my aunt Shelly and
 the other being some other contestant $$c$$, we can consider the following
 matrix as the data structure:
 
@@ -59,7 +59,7 @@ $$\begin{bmatrix}
 1.00 & 0.94
 \end{bmatrix}.$$
 
-This means that Shelley would lose the difference competition by $$0.04$$ points,
+This means that Shelly would lose the difference competition by $$0.04$$ points,
 but win the relative difference competition by $$0.06$$ points. Using this point
 information, we can then derive a method to determine a winner in consideration
 of each competition. This is rather simple, as we can form a new vector that is
@@ -81,7 +81,7 @@ $$\begin{bmatrix}
 0.97
 \end{bmatrix},$$
 
-and Shelley wins.
+and Shelly wins.
 
 #### Also
 
@@ -119,7 +119,7 @@ pub struct Contest<'a> {
 
 I've elided some of the associated functions to these `structs`, but the
 following demonstrates the normalizing function and an example usage that I use
-to define the `Debug` trait which one can then use with the `println!` macro to
+to define the `Debug` trait which we can then use with the `println!` macro to
 display the array.
 
 ```rust
@@ -164,10 +164,10 @@ Using the library is as easy as building up a vector of contestants, then
 creating a contest with those contestants. For example:
 
 ```rust
-let shelley = Contestant::new("Shelley", 135.1, 125.3);
+let shelly = Contestant::new("Shelly", 135.1, 125.3);
 let sarah = Contestant::new("Sarah", 150.2, 140.0);
 let bob = Contestant::new("Bob", 187.8, 174.4);
-let contest = Contest::new(vec![shelley, sarah, bob]);
+let contest = Contest::new(vec![shelly, sarah, bob]);
 println!("{:?}", contest);
 ```
 
