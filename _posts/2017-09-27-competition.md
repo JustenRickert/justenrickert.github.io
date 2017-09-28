@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "Complex Contest"
-tags: [mathematics, rust language, complex contests]
+tags: [mathematics, rust language]
 date: 2017-09-27
 published: true
---
+---
 
 My aunt Shelley asked me an interesting question about a weight loss competition
 she competed in. The goal of the competition was to see who could lose the most
