@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Complex Competition"
-tags: [mathematics, rust language, complex contensts]
+title: "Complex Contest"
+tags: [mathematics, rust language, complex contests]
 date: 2017-09-27
 published: true
----
+--
 
 My aunt Shelley asked me an interesting question about a weight loss competition
 she competed in. The goal of the competition was to see who could lose the most
@@ -59,8 +59,8 @@ $$\begin{bmatrix}
 1.00 & 0.94
 \end{bmatrix}.$$
 
-This means that Shelley would lose the difference contest by $$0.04$$ points,
-but win the relative difference contest by $$0.06$$ points. Using this point
+This means that Shelley would lose the difference competition by $$0.04$$ points,
+but win the relative difference competition by $$0.06$$ points. Using this point
 information, we can then derive a method to determine a winner in consideration
 of each competition. This is rather simple, as we can form a new vector that is
 a linear combination of each column in the vector. There is also imposed the
