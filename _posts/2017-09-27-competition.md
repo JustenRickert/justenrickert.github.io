@@ -96,7 +96,7 @@ $$\begin{bmatrix}
 \nu_{1}(c_M) & \nu_{2}(c_M) & \dots & \nu_{N}(c_M)
 \end{bmatrix}.$$
 
-### Implementation
+### Implementation (in Rust)
 
 I used the following `structs` in my implementation code:
 
