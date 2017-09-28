@@ -6,8 +6,6 @@ date: 2017-09-27
 published: true
 ---
 
-## Introduction
-
 My aunt Shelley asked me an interesting question about a weight loss competition
 she competed in. The goal of the competition was to see who could lose the most
 weight. To those who don't know, my aunt Shelley doesn't weigh very much, which
