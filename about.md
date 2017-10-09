@@ -12,6 +12,13 @@ back in sometime!
 
 ### Current Works
 
+* Clojure commodities market simulation concept
+  ([repository](https://github.com/JustenRickert/commodigame), [prototype]({{
+  site.baseurl }}/commodigame/)). Eventually want to create a fun incremental
+  game for people to play, including an as large as possible set of commodities
+  as well as achievements, a server-run market of varying commodities to
+  influence markets, and potentially a global leaderboard.
+
 * Personal finance application concept
   ([repository](https://github.com/JustenRickert/financial-tribble),
   [prototype]({{ site.baseurl }}/finapp/)). Idea is to
