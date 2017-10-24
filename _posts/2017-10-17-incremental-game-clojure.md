@@ -62,7 +62,7 @@ Now that we have a state to manage, we need some way to manage it. (Remember it'
   (swap! state update :money #(- % amt)))
 ```
 
-By the name of these functions it should be easy to tell what they do. However, the implementation may seem a little unclear. For a single line function implementation it's actually very complex! For example it may partially appear that I was lying about `@`, but the function `swap!` asks specifically for an `atom` as operand (and not what the `atom` refers to). `swap!` also asks for a function and some values to pass to that function. We pass it `update` which uses the other two remaining operands, one of which is an anonymous function, taking whatever implicit value exists in `state` mapped under the name `:money` as its own operand, and returns the sum/difference of the implicit value passed to the anonymous function and the operand `amt` passed to the function being defined. 
+By the name of these functions it should be easy to tell what they do. However, the implementation may seem a little unclear. For a single line function implementation it's actually very complex! For example it may partially appear that I was lying about `@`, but the function `swap!` asks specifically for an `atom` as operand (and not what the `atom` refers to). `swap!` also asks for a function and some values to pass to that function. We pass it `update` which uses the other two remaining operands, one of which is an anonymous function, taking whatever implicit value exists in `state` mapped under the name `:money` as its own operand, and returns the sum/difference of the implicit value passed to the anonymous function and the operand `amt` passed to the function being defined. `update` then returns the value of the anonymous function to `swap` with the value in `state` having the key `:money`.
 
 Yikes! Take a second to reread that if you need, then note the usage of `!`. These functions (and `swap!`) _mutate the state_. We want to be very clear about when the state changes, which is why we use `!`. Clojure, being a functional programming language, tries its hardest to not mutate any state whenever possible. The convention is that functions have no side effects, so in this particular case one should be clear that that convention no longer holds.
 
@@ -98,7 +98,7 @@ It'll be very convenient to use `reagent` here, so make sure to add
 ```clojure
 (:require [reagent.core :as reagent])
 ```
-to your `namespace`. Also make sure that your `figwheel` project has an `index.html` resource with a `div` having an id "app". Then define a function that uses `hiccup`-style syntax to return an `html` element, render that element with `reagent`, and finally start the loop! (I went through this very quickly. I'll talk more about `hiccup` and `reagent` and they purpose they serve later. It somewhat ties into why atoms are important.)
+to your `namespace`. Also make sure that your `figwheel` project has an `index.html` resource with a `div` having an id "app". Then define a function that uses `hiccup`-style syntax to return an `html` element, render that element with `reagent`, and finally start the loop! (I went through this very quickly. I'll talk more about `hiccup` and `reagent` and the purpose they serve later. It somewhat ties into why atoms are important. Actually, `reagent` has its own important implementation of `atom`. I'm not sure exactly why but I assume it's to do virtual DOM diffing.)
 
 ```clojure
 (defn user-money []
