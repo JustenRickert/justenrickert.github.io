@@ -10,7 +10,11 @@ important impact on the World Wide Web. If you're interested in what I've
 already done, check out these lists of things. Also please make sure to check
 back in sometime!
 
-### Current Works
+### I've Put My Face on the Internet
+
+* [Programming Blogs](https://www.youtube.com/watch?v=LEXoBYFhISA&list=PLVCj0Cva2g6FuK6NYU6qu_fd50Sz8-txo)
+
+### Old Stuff I've Made And Probably Won't Work On
 
 * Clojure commodities market simulation concept
   ([repository](https://github.com/JustenRickert/commodigame), [prototype]({{
